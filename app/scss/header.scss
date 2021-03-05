@@ -1,0 +1,235 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 35px;
+
+    overflow: hidden;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    background-image: url('../image/intro/logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins-Bold', serif;
+    &-item{
+        margin-left: 26px;
+        & a {
+            color: $menu;
+            &.home-now {
+                color: #7492ec;
+            }
+            &.aboutus-now {
+                color: #7492ec;
+            }
+            &.classes-now {
+                color: #7492ec;
+            }
+            &.pricing-now {
+                color: #7492ec;
+            }
+            &.contact-now {
+                color: #7492ec;
+            }
+        }
+        & :hover {
+            color: $main;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    &-button {
+        margin-left: 25px;
+        color: #fff;
+    }
+}
+
+.min-header {
+    display: none;
+
+    overflow: hidden;
+}
+
+.menu-burger {
+    display: none;
+
+    width: 50px;
+    height: 30px;
+
+    position: relative;
+
+    transition: 1s;
+    span {
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: $main;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: -1px;
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+
+            width: 50px;
+            height: 4px;
+
+            background-color: $main;
+
+            transition: .5s;
+        }
+        &:before {
+            transform: translateY(-10px);
+        }
+        &:after {
+            transform: translateY(5px);
+        }
+    }
+    &.active {
+        margin-right: 170px;
+        span {
+            height: 0;
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+                margin-top: -4px;
+            }
+        }
+    }
+    
+}
+
+.min-nav {
+    display: none;
+
+    position: absolute;
+    top: 20px;
+    right: -200px;
+
+    transition: all 2s linear;
+
+    font-size: 32px;
+
+    background-color: #fff;
+
+    z-index: 9999;
+    &.active {
+        display: block;
+
+        right: 20px;
+    }
+}
+
+.min-menu {
+    &-item {
+        height: 70px;
+        width: 190px;
+
+        border: 1px #7492ec4b solid;
+        & a {
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            width: 100%;
+            height: 100%;
+            color: $main;
+        }
+        &:hover {
+            background-color: #7492ec4b;
+        }
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .nav {
+        display: none;
+    }
+    .menu-burger {
+        display: flex;
+    }
+    .min-header {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        margin: 0 30px;
+        padding-top: 15px;
+    }
+    .menu-burger {
+        &.active {
+            margin-right: 130px;
+        }
+        
+    }
+    .min-nav {
+        font-size: 24px;
+        &.active {
+            right: 10px;
+        }
+    }
+    .min-menu {
+        &-item {
+            height: 55px;
+            width: 135px;
+            & a {
+                padding-left: 20px;
+            }
+        }
+    }
+    .menu-burger {
+        &.active {
+            margin-right: 130px;
+        }
+    }    
+}
+
+@media screen and (max-height: 320px) {
+    .min-menu {
+        &-item {
+            height: 50px;
+            & a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu-burger {
+        width: 40px;
+        height: 25px;
+        span {
+            width: 40px;
+            &:before,
+            &:after {
+                width: 40px;
+            }
+        }
+        &.active {
+            margin-right: 130px;
+        }
+        
+    }   
+}

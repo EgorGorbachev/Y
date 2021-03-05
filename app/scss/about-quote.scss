@@ -1,0 +1,43 @@
+.container{
+    &.quote {
+        max-width: 630px;
+    }
+}
+
+.aboutus-quote {
+    background-image: url('../image/about-us/quote/bg-quote.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-top: 170px;
+    padding-bottom: 100px;
+    &-comment {
+        margin: 0 auto;
+        width: 630px;
+
+        font-family: 'Droid-Italic', serif;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        line-height: 1.4;
+    }
+    &-name {
+        font-family: 'Poppins-Medium', serif;
+        text-align: center;
+        color: #fff;
+
+        margin: 50px auto 0;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutus-quote {
+        &-comment {
+            width: auto;
+            font-size: 18px;
+        }
+    }
+
+}

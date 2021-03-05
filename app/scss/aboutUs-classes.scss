@@ -1,0 +1,115 @@
+.aboutus-classes {
+    background-image: url('../image/about-us/classes/bg-classes.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    &-wr {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 120px;
+        padding-bottom: 127px;
+    }
+    &-item {
+        width: 32%;
+        &-title {
+            font-family: 'Poppins-Medium';
+            font-size: 18px;
+            color: $main;
+
+            margin-top: 35px;
+        }
+        &-text {
+            color: $text;
+            line-height: 1.5;
+
+            margin-top: 20px;
+        }
+        & img {
+            max-width: 370px;
+            width: 100%;
+            height: 270px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus-classes {
+        background-image: none;
+        &-wr {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            padding-bottom: 70px;
+
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &-item {
+            width: 100%;
+            margin-bottom: 30px;
+            & img {
+                max-width: 670px;
+                width: 100%;
+                height: auto;
+
+                margin: 0 auto;
+            }
+        } 
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .aboutus-classes {
+        background-image: none;
+        &-wr {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            padding: 0 10px;
+            padding-top: 60px;
+            padding-bottom: 20px;  
+        }
+        &-item {
+            width: 100%;
+
+            padding-bottom: 20px;
+            &-title {
+                font-family: 'Poppins-Medium';
+                font-size: 18px;
+                color: $main;
+    
+                margin-top: 35px;
+            }
+            &-text {
+                color: $text;
+                line-height: 1.5;
+    
+                margin-top: 20px;
+            }
+            & img {
+                max-width: 370px;
+                width: 100%;
+                height: 270px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .aboutus-classes {
+        &-item {
+            & img {
+                max-width: 279px;
+                height: auto;
+
+                margin: 0 auto;
+            }
+        }
+    }
+}

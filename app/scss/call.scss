@@ -1,0 +1,149 @@
+.call-wrapper {
+    padding-top: 245px;
+    padding-bottom: 195px;
+}
+
+.call {
+    position: relative;
+
+    background-color: #f8f7fc;
+    &-title {
+        color: $main;
+        font-family: 'Poppins-Light';
+        font-size: 48px;
+
+        margin-left: 185px;
+        margin-bottom: 10px;
+    }
+    &-text {
+        color: $main;
+        font-size: 21px;
+
+        line-height: 1.6;
+        width: 460px;
+
+        margin-left: 185px;
+        margin-bottom: 45px;
+    }
+    &-button {
+        color: #fff;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        margin-left: 185px;
+    }
+    img {
+        position: absolute;
+        right: 25%;
+        top: -60px;
+
+        z-index: 9998;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .call {
+        img {
+            right: 15%;
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .call {
+        img {
+            right: 5%;
+        }
+        &-title {
+            margin-left: 150px;
+        }
+        &-text {
+            margin-left: 150px;
+        }
+        &-button {
+            margin-left: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .call {
+        img {
+            right: 5%;
+        }
+        &-title {
+            margin-left: 100px;
+        }
+        &-text {
+            margin-left: 100px;
+        }
+        &-button {
+            margin-left: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .call {
+        img {
+            right: 5%;
+        }
+        &-title {
+            margin-left: 20px;
+        }
+        &-text {
+            margin-left: 20px;
+        }
+        &-button {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .call {
+        &-text {
+            width: auto;
+        }
+        img {
+            display: none;
+        }
+        &-title {
+            font-size: 32px;
+            text-align: center;
+        }
+        &-text {
+            font-size: 16px;
+            text-align: center;
+            margin: 20px auto;
+        }
+        &-button {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .call-wrapper {
+        padding-top: 145px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .call-wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .call {
+        &-button {
+            margin-left: 35%;
+            transform: translateX(-27%);
+
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+    }
+    
+}

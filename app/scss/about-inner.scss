@@ -1,0 +1,121 @@
+.aboutus-inner {
+    background-image: url('../image/header/bg-header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 55vh;
+}
+
+.aboutus-content {  
+    margin-top: 17vh;
+    &-title {
+        font-size: 72px;
+        
+        font-family: 'Poppins-Light', serif;
+        color: $main;
+    }
+    &-text {
+        font-family: 'Lato-regular';
+        color: $menu;
+
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus-content {  
+        margin-top: 0;
+        &-title {
+            margin-left: 60px;
+        }
+        &-text {
+            margin-left: 60px;
+        }
+    }
+    .aboutus-inner {
+        height: 28vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus-inner {
+        height: 35vh;
+    }
+}
+@media screen and (max-height: 999px) {
+    .aboutus-inner {
+        height: 55vh;
+    }
+    .aboutus-content {  
+        margin-top: 0;
+        &-title {
+            margin-left: 0;
+        }
+        &-text {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutus-inner {
+        height: 35vh;
+    }
+    .aboutus-content {  
+        margin-top:0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-inner {
+        background: none;
+        height: 90px;
+        margin-bottom: 50px;
+
+        background-color: #e2e8f7;
+    }
+    .aboutus-content {  
+        margin-top: 0;
+        &-title {
+            margin-left: 0;
+            text-align: center;
+        }
+        &-text {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-height: 450px) {
+    .aboutus-inner {
+        background: none;
+        height: 120px;
+        margin-bottom: 50px;
+
+        background-color: #e2e8f7;
+    }
+    .aboutus-content {  
+        margin-top: 0;
+        &-title {
+            margin-left: 0;
+            text-align: center;
+        }
+        &-text {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .aboutus-content {  
+        &-title {
+            font-size: 52px;
+        }
+    }
+
+}
+

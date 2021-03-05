@@ -1,0 +1,149 @@
+.intro {
+    background-image: url('../image/home/intro/bg-intro.png');
+    background-repeat:  no-repeat;
+    background-size: cover;
+
+    height: 98vh;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 190px;
+
+    font-family: 'Poppins-Light', serif;
+    font-size: 72px;
+    &-item {
+        margin-bottom: 30px;
+        color: #6a8dec;
+        text-align: right;
+        &.one {
+            margin-right: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .intro {
+        background-image: url('../image/header/bg-header.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        height: 55vh;
+    }
+    .content {
+        margin-top: 50px;
+        font-family: 'Poppins-Light', serif;
+        font-size: 48px;
+
+        width: 350px;
+        &-item {
+            margin-bottom: 30px;
+            color: #6a8dec;
+            text-align: right;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .intro {
+        height: 35vh;
+    }
+    .content {
+        margin-top: 20px;
+        font-family: 'Poppins-Light', serif;
+        font-size: 28px;
+
+        width: 250px;
+        &-item {
+            margin-bottom: 10px;
+            color: #6a8dec;
+            text-align: right;
+            &.one {
+                margin-right: 40px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        margin-top: 60px;
+
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        background: none;
+        height: 90px;
+        margin-bottom: 50px;
+
+        background-color: #e2e8f7;
+    }
+    .content {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .intro {
+        background: none;
+        height: 120px;
+        margin-bottom: 50px;
+
+        background-color: #e2e8f7;
+    }
+    .content {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-height: 1010px) {
+    .intro {
+        height: 35vh;
+    }
+    .content {
+        font-size: 32px;
+
+        margin-top: 30px;
+
+        width: 300px;
+        &-item {
+            margin-bottom: 10px;
+            color: #6a8dec;
+            text-align: right;
+            &.one {
+                margin-right: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    .intro {
+        height: 30vh;
+    }
+    .content {
+        font-size: 40px;
+
+        margin-top: 50px;
+
+        width: 400px;
+        &-item {
+            margin-bottom: 20px;
+            color: #6a8dec;
+            text-align: right;
+            &.one {
+                margin-right: 70px;
+            }
+        }
+    }
+}

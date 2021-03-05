@@ -1,0 +1,34 @@
+.aboutus-call {
+    padding-top: 118px;
+    padding-bottom: 114px;
+
+    text-align: center;
+    &-title {
+        font-size: 32px;
+        font-family: 'Poppins-Light', serif;
+        margin-bottom: 25px;
+    }
+    &-text {
+        width: 455px;
+        margin: 0 auto;
+
+        color: $text;
+        line-height: 1.5;
+
+        margin-bottom: 50px;
+    }
+    &-button {
+        color: #fff;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-call {
+        padding: 60px 10px;
+        &-text {
+            width: auto;
+        }
+    }
+
+}

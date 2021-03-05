@@ -1,0 +1,126 @@
+.aboutus-testimonials {
+    background-color: #e5eaf7;
+    
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.aboutus-slide {
+    position: relative;
+     text-align: center;
+
+     padding-bottom: 47px;
+
+     &-title {
+         font-family: 'Poppins-Bold', serif;
+         font-size: 16px;
+         color: $main;
+         text-transform: capitalize;
+
+         margin-bottom: 12px;
+     }
+     &-text {
+         width: 585px;
+         margin: auto;
+
+         font-size: 16px;
+         color: $menu;
+         line-height: 1.4;
+         
+         margin-bottom: 28px;
+     }
+     img {
+         margin: auto;
+         margin-bottom: 20px;
+
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+     }
+     &-name {
+        font-family: 'Poppins-Bold', serif;
+        color: $main;
+        text-transform: capitalize;
+
+        margin-bottom: 6px;
+     }
+     &-supname {
+        color: $menu;
+     }
+}
+
+.aboutus-slider-container .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
+
+.aboutus-slider-container .swiper-pagination-bullet {
+    background-color: $main;
+}
+
+.aboutus-coutndown {
+    margin-top: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &-item {
+        &-text {
+            font-family: 'Droid-Regular', serif;    
+            font-size: 42px;
+            color: $main;
+
+            margin-bottom: 18px;
+        }
+        &-suptext {
+            color: $menu;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .aboutus-testimonials {
+        padding: 60px 40px;
+    }
+    .aboutus-coutndown {
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .aboutus-testimonials {
+        padding: 60px 10px;
+    }
+    .aboutus-slide {
+         &-text {
+            font-size: 12px;
+             width: auto;
+         }
+    }
+    .aboutus-coutndown {
+        &-item {
+            &-text {
+                font-size: 32px;
+            }
+            &-suptext {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .aboutus-coutndown {
+        margin-top: 40px;
+        &-item {
+            &-text {
+                font-size: 24px;
+            }
+            &-suptext {
+                font-size: 9px;
+            }
+        }
+    }
+
+}
+

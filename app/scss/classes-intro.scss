@@ -1,0 +1,134 @@
+.classes {
+    &-intro {
+        background-image: url('../image/header/bg-header.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        height: 50vh;
+        &-content {
+            margin-top: 17vh;
+        }
+        &-title {
+            font-size: 72px;
+            
+            font-family: 'Poppins-Light', serif;
+            color: $main;
+        }
+        &-text {
+            font-family: 'Lato-regular';
+            color: $menu;
+            line-height: 1.5;
+
+            margin-top: 25px;
+
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .classes {
+        &-intro {
+            height: 35vh;
+            &-content {
+                margin-top: 7vh;
+                padding-left: 100px;
+            }
+            &-title {
+                font-size: 72px;
+                
+                font-family: 'Poppins-Light', serif;
+                color: $main;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 999px) {
+    .classes {
+        &-intro {
+            height: 55vh;
+            &-content {
+                margin-top: 7vh;
+                padding-left: 0;
+            }
+            &-title {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .classes {
+        &-intro {
+            height: 35vh;
+            &-content {
+                margin-top: 7vh;
+                padding-left: 50px;
+            }
+            &-title {
+                font-size: 64px;
+                
+                font-family: 'Poppins-Light', serif;
+                color: $main;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .classes {
+        &-intro {
+            height: 30vh;
+            &-content {
+                margin-top: 3vh;
+                padding-left: 50px;
+            }
+            &-title {
+                font-size: 50px;
+                
+                font-family: 'Poppins-Light', serif;
+                color: $main;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .classes {
+        &-intro {
+            background: none;
+            height: 120px;
+            margin-bottom: 50px;
+
+            background-color: #e2e8f7;
+            &-content {
+                padding-left: 0;
+                text-align: center;
+            }
+            &-title {
+                font-size: 72px;
+                
+                font-family: 'Poppins-Light', serif;
+                color: $main;
+
+                margin-bottom: 20px;
+            }
+            &-text {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .classes {
+        &-intro {
+            height: 90px;
+        }
+    }
+
+}

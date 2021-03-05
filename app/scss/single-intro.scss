@@ -1,0 +1,223 @@
+.single {
+    &-intro {
+        background-image: url('../image/header/bg-header.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        height: 50vh;
+        &-content {
+            margin-top: 22vh;
+        }
+        &-title {
+            font-size: 29px;
+            
+            font-family: 'Poppins-Light', serif;
+            color: $main;
+        }
+        &-text {
+            font-family: 'Lato-regular';
+            color: $menu;
+            line-height: 1.5;
+
+            margin-top: 15px;
+
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-height: 999px) {
+    .single {
+        &-intro {
+            height: 55vh;
+            &-content {
+                margin-top: 7vh;
+            }
+            &-title {
+                width: 700PX;
+                font-size: 50px;
+            }
+            &-text {
+                font-family: 'Lato-regular';
+                color: $menu;
+                line-height: 1.5;
+    
+                margin-top: 15px;
+    
+                width: 400px;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-height: 1000px) {
+    .single {
+        &-intro {
+            height: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .single {
+        &-intro {
+            height: 55vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .single {
+        &-intro {
+            height: 37vh;
+            &-content {
+                margin-top: 7vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .single {
+        &-intro {
+            height: 40vh;
+            &-content {
+                padding: 0 20px;
+                margin-top: 10vh;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .single {
+        &-intro {
+            height: 35vh;
+            &-title {
+                font-size: 22px;
+
+                width: auto;
+                
+                font-family: 'Poppins-Light', serif;
+                color: $main;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .single {
+        &-intro {
+            &-content {
+                margin-top: 7vh;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .single {
+        &-intro {
+            background: none;
+            height: 120px;
+            margin-bottom: 50px;
+    
+            background-color: #e2e8f7;
+            &-content {
+                margin-top: 7vh;
+            }
+            &-title {
+                font-size: 22px;
+                text-align: center;
+                padding: 0 20px;
+            }
+            &-text {
+                width: auto;
+                text-align: center;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .single {
+        &-intro {
+            background: none;
+            height: 120px;
+            margin-bottom: 50px;
+    
+            background-color: #e2e8f7;
+            &-content {
+                margin-top: 13vh;
+            }
+            &-title {
+                font-size: 27px;
+                text-align: center;
+                padding: 0 20px;
+            }
+            &-text {
+                width: auto;
+                text-align: center;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .single {
+        &-intro {
+            height: 90px;
+        }
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .single {
+        &-intro {
+            height: 40vh;
+            &-content {
+                margin-top: 7vh;
+            }
+            &-title {
+                width: auto;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .single {
+        &-intro {
+            background: none;
+            height: 90px;
+            margin-bottom: 50px;
+    
+            background-color: #e2e8f7;
+            &-content {
+                margin-top: 7vh;
+            }
+            &-title {
+                font-size: 22px;
+                text-align: center;
+                padding: 0 20px;
+            }
+            &-text {
+                width: auto;
+                text-align: center;
+                padding: 0 20px;
+            }
+        }
+    }
+}

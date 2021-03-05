@@ -1,0 +1,47 @@
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.team-header {
+    background-color: #dfe5f2;
+
+    padding: 20px 60px;
+    margin: 0;
+}
+
+.accordion {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: $text;
+}
+
+.team {
+    &-info {
+        padding-left: 30px;
+        &-name {
+            font-size: 20px;
+        }
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: $main;
+    background-color: #f1f6fc;
+}
+
+.team-modal {
+    height: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    .team-header {
+        background-color: #dfe5f2;
+    
+        padding: 20px 20px;
+        margin: 0;
+    }
+}

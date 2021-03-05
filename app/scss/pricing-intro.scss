@@ -1,0 +1,158 @@
+.pricing-inner {
+    background-image: url('../image/header/bg-header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 50vh;
+}
+
+.pricing-content {
+    margin-top: 17vh;
+    &-title {
+        font-size: 72px;
+        
+        font-family: 'Poppins-Light', serif;
+        color: $main;
+    }
+    &-text {
+        font-family: 'Lato-regular';
+        color: $menu;
+        line-height: 1.5;
+
+        margin-top: 25px;
+
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .pricing-content {
+        margin-top: 10vh;
+    }
+    .pricing-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+        header {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media screen and (min-height: 1300px) {
+    .pricing-inner {
+        height: 30vh;
+    }
+    .pricing-content {
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-height: 999px) {
+    .pricing-inner {
+        height: 55vh;
+    }
+    .pricing-content {
+        margin-top: 7vh;
+        &-title {
+            margin-left: 0;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 850px) {
+    .pricing-inner {
+        height: 35vh;
+    }
+    .pricing-content {
+        margin-top: 5vh;
+        &-title {
+            font-size: 50px;
+        }
+        &-text {
+            font-size: 12px;
+
+            width: 350px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .pricing-content {
+        margin-top: 5vh;
+        &-title {
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        &-text {
+            font-size: 12px;
+
+            margin-top: 10px;
+
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .pricing-inner {
+        background: none;
+        height: 120px;
+        margin-bottom: 50px;
+
+        background-color: #e2e8f7;
+    }
+    .pricing-content {
+        margin-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pricing-inner {
+        background: none;
+        height: 120px;
+        margin-bottom: 50px;
+
+        background-color: #e2e8f7;
+    }
+    .pricing-content {
+        &-title {
+            text-align: center;
+        }
+        &-text {
+            text-align: left;
+            margin: 20px auto;
+
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pricing-inner {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pricing-content {
+        &-title {
+            font-size: 32px;
+        }
+        &-text {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pricing-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

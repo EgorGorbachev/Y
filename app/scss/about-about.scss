@@ -1,0 +1,135 @@
+.aboutus-about {
+    padding-top: 90px;
+    padding-bottom: 178px;
+    &-img {
+        position: absolute;
+        right: 36vh;
+        top: 46vh;
+    }
+    &-text {
+        &-item {
+            width: 518px;
+            margin-top: 37px;
+
+            line-height: 1.6;
+
+            font-family: 'Lato-regular', serif;
+            color: $text;
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .aboutus-about {
+        &-img {
+        position: absolute;
+        right: 26vh;
+        top: 46vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .aboutus-about {
+        &-img {
+        position: absolute;
+        right: 16vh;
+        top: 46vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .aboutus-about {
+        &-img {
+        position: absolute;
+        right: 6vh;
+        top: 46vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        &.aboutus-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .aboutus-about-img {
+        position: static;
+        max-width: 600px;
+    }
+    .aboutus-about {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        &-text {
+            &-item {
+                width: 800px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .aboutus-about {
+        padding-left: 20px;
+        padding-right: 20px;
+        &-text {
+            &-item {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .aboutus-about {
+        &-img {
+            position: static;
+            max-width: 500px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .aboutus-about {
+        padding-top: 0;
+        padding-bottom: 40px;
+        &-img {
+            display: none;
+        }
+        &-text {
+            margin-top: 150px;
+            padding: 0 10px;
+            &-item {
+                width: auto;
+                text-align: center;
+
+                position: static;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .aboutus-about {
+        &-img {
+            display: none;
+        }
+        &-text {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .aboutus-about {
+        &-text {
+            margin-top: 70px;
+        }
+    }
+}

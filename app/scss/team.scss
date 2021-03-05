@@ -1,0 +1,227 @@
+.caption {
+    background: url('../image/home/caption/bg-caption.jpg') no-repeat center;
+    
+    color: #fff;
+
+    padding-bottom: 105px;
+    padding-top: 137px;
+
+    z-index: 9997;
+
+    position: relative;
+    &-title {
+        font-family: 'Poppins-Light';
+        font-size: 32px;
+
+        text-align: center;
+    }
+    &-suptitle {
+        text-align: center;
+        width: 540px;
+        margin: 0 auto;
+        margin-top: 25px;
+        line-height: 1.6;
+    }
+    &-buttontitle {
+        text-align: center;
+        font-family: 'poppins-Medium';
+
+        margin-top: 60px;
+    }
+    &-button {
+        display: block;
+
+        margin: auto;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+
+        border: 2px solid #fff;
+        border-radius: 50%;
+
+        background: transparent;
+        background-image: url('../image/home/caption/icon-caption-arrow-down.jpg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-button.active {
+        transform: rotate(180deg);
+    }
+}
+
+.teampic {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 118px;
+    padding-bottom: 60px;
+    &-item {
+        width: 23%;
+        display: flex;
+
+        margin-bottom: 60px;
+        align-items: center;
+        & img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+        &-dis {
+            margin-left: 20px;
+            &-title {
+                font-family: 'poppins-Bold';
+                font-size: 16px;
+                
+                margin-bottom: 7px;
+                color: #000
+            }
+            &-suptitle {
+                color: #808080;
+            }
+        }
+    }
+}
+
+.team {
+    z-index: 1;
+    animation-name: none;
+    opacity: 0;
+    margin-top: -600px;
+    z-index: 1;
+    transition: all .2s linear;
+    animation-duration: 1s; 
+}
+
+@keyframes none {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 0;
+    }
+
+}
+
+@keyframes open {
+    from {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+    }
+    50% {
+        opacity: .1;
+    }
+    to {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+}
+
+.team.active {
+    opacity: 1;
+    margin-top: 0;
+    transition: all .3s linear;
+    animation-name: open;
+    animation-duration: 1s;
+    display: flex;
+}
+
+@media screen and (max-width: 1150px) {
+    .teampic {
+        margin-left: 50px;
+        &-item {
+            width: 33%;
+        }
+    }
+    .team {
+        margin-top: -800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .teampic {
+        margin-left: 60px;
+        &-item {
+            width: 50%;
+        }
+    }
+    .team {
+        margin-top: -1050px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .caption-suptitle {
+        width: auto;
+    }
+    .teampic {
+        margin-left: 30px;
+        &-item {
+            width: 50%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .teampic {
+        margin-left: 30px;
+        margin-top: 20px;
+        padding-top: 20px;
+        &-item {
+            & img {
+                width: 40px;
+                height: 40px;
+            }
+            &-dis {
+                &-title {
+                    font-size: 12px;
+                }
+                &-suptitle {
+                    font-size: 10px;
+                }
+            }
+            width: 50%;
+        }
+    }
+    .team {
+        margin-top: -700px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .teampic {
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .teampic {
+        margin-left: 30px;
+        &-item {
+            width: 100%;
+            & img {
+                width: 60px;
+                height: 60px;
+            }
+            &-dis {
+                &-title {
+                    font-size: 20px;
+                }
+                &-suptitle {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .team {
+        margin-top: -1500px;
+    }
+    .caption {
+        padding-bottom: 65px;
+        padding-top: 45px;
+    }
+}
