@@ -1,4 +1,4 @@
-# https://egorgorbachev.github.io/Yoga/
+## https://egorgorbachev.github.io/Yoga-processing/
 
 My cours finaly progect. Multi-page yoga studio website.
 
