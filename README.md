@@ -4,7 +4,7 @@ My cours finaly progect. Multi-page yoga studio website.
 
 ## Project structure
 
-![Project structure](https://prnt.sc/10dn98c)
+![a](https://user-images.githubusercontent.com/77729737/110121326-4e485e80-7dcf-11eb-9b49-b5ce105f3e0f.png)
 
 The file structure is represented by two basic folders: app and dist.
 
